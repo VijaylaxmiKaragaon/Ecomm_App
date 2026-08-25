@@ -1,0 +1,14 @@
+package com.ecomm.user.service;
+
+import com.ecomm.user.dto.RoleDto;
+import com.ecomm.user.enums.RoleType;
+
+public interface RoleService {
+
+	RoleDto addRole(RoleType roleName);
+	
+	RoleDto getRoleByRoleName(RoleType roleName);
+	
+	RoleDto getRoleById(Integer roleId);
+	
+}
